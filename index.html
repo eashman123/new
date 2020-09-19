@@ -121,13 +121,20 @@
               Hi! My name is Eashaan
             </h2>
             <p class="text text-justify ">
-              <h5 class="about-jobs smaller-mobile">Seeking a CS <span class="lattice">Internship</span> or <span class="lattice">Research</span> Oppurtunity
-                  <!--<span class="lattice">Summer 2020</span> </h5>-->
-              <!-- <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
-              <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5> -->
-              <h5 class="about-jobs about-school smaller-mobile">I'm a junior studying <span class="major">Electrical Engineering and Computer Science</span> with an interest
-              in <span class="major ">Artificial Intelligence</span> at
+              <h5 class="about-jobs about-school smaller-mobile animated fadeIn">I'm a senior studying <span class="major">Electrical Engineering and Computer Science</span> at
               <span class="college">UC Berkeley</span>.</h5>
+              <h5 class="about-jobs smaller-mobile animated fadeIn delay-2s">Currently seeking <span class="lattice">Software Engineering</span> Oppurtunities for Summer 2021</h5>
+              <div id="menu-imp" class="smaller-mobile-links animated fadeIn delay-3s">
+                <ul>
+                    <li class="menu-item"><a class="list-resume" href="https://drive.google.com/file/d/1cgg58kQLqthgpHUTKw-m9rnoQ1cVxrUK/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li class="menu-item-line">·</li>
+                    <li class="menu-item"><a class="list-linkedin" href="https://www.linkedin.com/in/eashaankatiyar/" target="_blank">Linkedin</a></li>
+                    <li class="menu-item-line">·</li>
+                    <li class="menu-item"><a class="list-github" href="https://github.com/ekatiyar" target="_blank">Github</a></li>
+                </ul>
+                </div>
+              <!-- <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
+              <h5 class="about-jobs smaller-mobile animated fadeIn delay-2s">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5> -->
             </p>
           </div>
           </div>
@@ -140,7 +147,7 @@
         <div class="row">
           <div class="col offset-md-0 offset-lg-2 intro-two">
             <h3 class="just-head just-head-two">
-              Experience & Clubs
+              Experience
             </h3>
             <div class="row">
               <div class="col-2">
@@ -151,84 +158,100 @@
                 >
                   <a
                     class="list-group-item list-group-item-action active list-bar"
+                    id="list-jnpr-list"
+                    data-toggle="list"
+                    href="#list-jnpr"
+                    role="tab"
+                    aria-controls="jnpr">Juniper Networks</a>
+                  <a
+                    class="list-group-item list-group-item-action list-bar"
                     id="list-intel-list"
                     data-toggle="list"
                     href="#list-intel"
                     role="tab"
-                    aria-controls="intel"
-                    >Intel
-                  </a>
+                    aria-controls="intel">Intel</a>
                   <a
                     class="list-group-item list-group-item-action list-bar"
                     id="list-neuriot-list"
                     data-toggle="list"
                     href="#list-neuriot"
                     role="tab"
-                    aria-controls="neuriot"
-                    >neurIOT</a
-                  >
+                    aria-controls="neuriot">neurIOT</a>
                   <a
                     class="list-group-item list-group-item-action list-bar"
                     id="list-ucb-list"
                     data-toggle="list"
                     href="#list-ucb"
                     role="tab"
-                    aria-controls="ucb"
-                    >UC Berkeley</a
-                  >
+                    aria-controls="ucb">UC Berkeley</a>
                   <a
                     class="list-group-item list-group-item-action list-bar"
                     id="list-stac-list"
                     data-toggle="list"
                     href="#list-stac"
                     role="tab"
-                    aria-controls="stac"
-                    >STAC</a
-                  >
+                    aria-controls="stac">STAC</a>
                   <a
                     class="list-group-item list-group-item-action list-bar"
                     id="list-csm-list"
                     data-toggle="list"
                     href="#list-csm"
                     role="tab"
-                    aria-controls="csm"
-                    >CSM</a
-                  >
+                    aria-controls="csm">CSM</a>
                 </div>
               </div>
               <div class="col-6">
                 <div class="tab-content" id="nav-tabContent">
                   <div
                     class="tab-pane show active"
+                    id="list-jnpr"
+                    role="tabpanel"
+                    aria-labelledby="list-jnpr-list"
+                  >
+                    <h4 class="job">
+                      Network Security Intern <span class="place">@ Juniper Networks</span>
+                    </h4>
+                    <h6 class="date">May - Aug 2020</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Developed the back-end of the WAN Assurance project, which simplifies 
+                        corporate network operations and boosts network uptime
+                      </li>
+                      <li class="job-desc-item">
+                        Integrated Juniper’s firewall devices by implementing <span class="techs">IPSEC</span> features for 
+                        the WAN-Assurance micro-services and data pipeline in a secure manner. Also 
+                        revamped micro-service codebase & associated protobuf structures to work with 
+                        high availability firewall systems
+                      </li>
+                      <li class="job-desc-item">
+                        Gained an industry understanding of <span class="techs">Go</span>, <span class="techs">Apache Kafka</span> & <span class="techs">Storm</span>, and experience 
+                        working in <span class="techs">Agile</span> development
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="tab-pane"
                     id="list-intel"
                     role="tabpanel"
                     aria-labelledby="list-intel-list"
                   >
                     <h4 class="job">
-                      Design Automation Engineer <span class="place">@ Intel Corporation</span>
+                      Design Automation Intern <span class="place">@ Intel Corp.</span>
                     </h4>
                     <h6 class="date">May - Aug 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Built a <span class="techs">GNU Make</span> flow generation system in 
-                        <span class="techs">Perl</span> that could run regressions for static 
-                        checks on <span class="techs">pre-silicon</span> designs, vastly 
-                        accelerating regression runtime and turnaround relative to the old flow
+                        Built an application in <span class="techs">Perl</span> that vastly accelerated regression runtime and 
+                        testing turnaround relative to the old system for Intel’s 7 and 10nm
+                        server designs. Additionally, overhauled existing tools that communicated 
+                        chip design readiness to customers
                       </li>
                       <li class="job-desc-item">
-                        This system also included modules to run performance analysis as well as 
-                        automated regression verification
+                        This application auto-generates Makefiles that only run regression tests 
+                        on updated designs & tests and leverages both thread-level <span class="techs">parallelism</span> 
+                        and <span class="techs">distributed computing</span> for a further performance increase.
                       </li>
-                      <li class="job-desc-item"> 
-                        Using this new system, executed multiple regressions for new versions of 
-                        <span class="techs">clock domain cross-</span> and 
-                        <span class="techs">low power-</span> checking tools, eventually centrally 
-                        installing them to be used by all design teams
-                      </li>
-                      <li class="job-desc-item">
-                        Overhauled indicator scripts that checked for design readiness regarding 
-                        faults with <span class="techs">asynchronous clock crossings</span>
-                    </li>
                     </ul>
                   </div>
 
@@ -239,23 +262,18 @@
                     aria-labelledby="list-neuriot-list"
                   >
                     <h4 class="job">
-                      Technical Software Intern <span class="place">@ neurIOT</span>
+                      Computer Vision Intern <span class="place">@ neurIOT</span>
                     </h4>
                     <h6 class="date">Jun - Aug 2018</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Worked on an application that extracted fashion features from sunglass images 
-                        (shape of lens, colors of frame, etc.) in order to predict future sales of 
-                        potential designs using a ML model
+                        Developed a machine learning application that predicted sales of potential 
+                        sunglass designs for a leading sunglasses manufacturer
                       </li>
                       <li class="job-desc-item">
-                        Used <span class="techs">OpenCV</span> and <span class="techs">scikit-learn</span> 
-                        to conduct image classification and feature extraction
+                        Designed system to extract sunglass fashion features from images by utilizing 
+                        <span class="techs">OpenCV</span> and <span class="techs">scikit-learn</span> for feature extraction and image classification
                       </li>
-                      <li class="job-desc-item">
-                        Conducted software demos of this application in presentations and meetings with 
-                        third-party clients
-                     </li>
                     </ul>
                   </div>
 
@@ -268,7 +286,7 @@
                     <h4 class="job">
                       AI Rover Member <span class="place">@ Space Technologies at Cal</span>
                     </h4>
-                    <h6 class="date">Feb 2019 - Present</h6>
+                    <h6 class="date">Feb - Dec 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
                         Work on an RL model to navigate rovers on extraterrestrial soil for exploration 
@@ -361,66 +379,64 @@
             <div class="card-deck">
                 <div class="card border-light mb-3" >
                     <div class="card-header bg-transparent">
-                      <i class="fa fa-video-camera fa-2x p-head" aria-hidden="true"> </i>      
-                      <a class="float-right" href="https://github.com/sahilrao21/LectureSummarization" target="_blank">                
+                      <i class="fab fa-spotify fa-2x p-head" aria-hidden="true"> </i>      
+                      <a class="float-right" href="https://github.com/ekatiyar/Spotifylter" target="_blank">                
                       <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
                     </a> 
                     </div>
                     <div class="card-body ">
-                      <h4 class="card-title">TL;DW</h4>
-                      <h6 class="card-subtitle mb-2 text-muted">March 2019</h6>
-                      <p class="card-text">Wrote an application that shrinks recorded lecture length by removing non-important sections of lecture using a sumy LexRank model and a
-                        RNN for sentence boundary detection in free-run speech. Built in Python, deployed through Flask.</p>
+                      <h4 class="card-title">Spotifylter: Music Filtering Service</h4>
+                      <p class="card-text">Service that analyzes user listening behavior to add 
+                        and remove songs, maintaining library & playlist quality</p>
                     </div>
-                    <div class="card-footer bg-transparent">Python &ensp;  Html/CSS  &ensp; JS
+                    <div class="card-footer bg-transparent">Python &ensp;  SQL &ensp; SaaS &ensp; Stats
                     </div>
                   </div>
                   <div class="card border-light ml-0 mb-3" >
                       <div class="card-header bg-transparent ">
-                        <i class="fa fa-reddit-alien fa-2x p-head" aria-hidden="true"></i>
-                        <a class="float-right" href="https://github.com/ekatiyar/RedditRecommends" target="_blank">              
-                        <i class="fa fa-github-alt p-head-foot p-foot" aria-hidden="true"></i>
-                        </a>
+                        <i class="fas fa-basketball-ball fa-2x p-head" aria-hidden="true"></i>
                       </div>
                       <div class="card-body ">
-                        <h4 class="card-title">Reddit Recommends</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">November 2018</h6>
-                        <p class="card-text">Built a website that leverages Reddit purchasing sentiment to generate product recommendations in an easy-to-use web app. Written in
-                          Python/Flask using nltk to conduct sentiment analysis, deployed on Heroku</p>
+                        <h4 class="card-title">Fantasy Basketball Lineup Optimizer</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Summer 2020</h6>
+                        <p class="card-text">Predicts and generates optimal daily fantasy lineups. I ranked in the top 5% of players in Yahoo DFS</p>
                       </div>
-                      <div class="card-footer bg-transparent card-footer-reddit">Python &ensp;  Html/CSS &ensp;  JS</div>
+                      <div class="card-footer bg-transparent card-footer-reddit">JS &ensp;  LP &ensp;  Algo</div>
                     </div>
           </div>
-<!--
+
           <div class="card-deck second-deck">
               <div class="card border-light" >
                   <div class="card-header bg-transparent ">
-                    <i class="fa fa-code-fork fa-2x p-head" aria-hidden="true"> </i>                       
-                    <a class="cs61b float-right" href="https://cs61bl.org/su18/projects/gitlet/" target="_blank">Cs61B</a>
-                 
+                    <i class="fa fa-video-camera fa-2x p-head" aria-hidden="true"> </i>                       
+                    <a class="float-right" href="https://github.com/sahilrao21/LectureSummarization" target="_blank">
+                      <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
+                    </a>
                   </div>
                   <div class="card-body">
-                    <h4 class="card-title">Gitlet</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">July 2018</h6>
-                    <p class="card-text">Barebones version control system mimicking basic features of Git.</p>
+                    <h4 class="card-title">TL;DW</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">March 2019</h6>
+                    <p class="card-text">Command-Line application that summarizes webcast lectures by removing unimportant segments</p>
                   </div>
-                  <div class="card-footer bg-transparent">Java</i>
+                  <div class="card-footer bg-transparent">Python &ensp;  NLP &ensp;  AI
                   </div>
                 </div>
                 <div class="card border-light ml-0" >
                     <div class="card-header bg-transparent ">
-                      <i class="fa fa-map fa-2x p-head" aria-hidden="true"></i>
-                      <a class="cs61b float-right" href="https://cs61bl.org/su18/projects/bearmaps/" target="_blank">Cs61B</a>
+                      <i class="fab fa-reddit-alien fa-2x p-head" aria-hidden="true"></i>
+                      <a class="float-right" href="https://github.com/ekatiyar/RedditRecommends" target="_blank">
+                      <i class="fab fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
+                    </a>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title">Bear-Maps</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">July 2018</h6>
-                        <p class="card-text">Google-Maps like application servicing the Berkeley area.</p>
+                        <h4 class="card-title">Reddit Recommends</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">November 2018</h6>
+                        <p class="card-text">Website that leverages Reddit purchasing sentiment to generate product recommendations in an easy-to-use web app</p>
                     </div>
-                    <div class="card-footer bg-transparent">Java</div>
+                    <div class="card-footer bg-transparent">Python &ensp; NLP &ensp; Flask &ensp; Cloud</div>
                   </div>
         </div>
--->
+
         </div>
       </div>
     </div>
@@ -500,7 +516,7 @@
         crossorigin="anonymous"
       ></script>
       <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
-      <script src="https://use.fontawesome.com/b765d6eec0.js"></script>
+      <script src="https://kit.fontawesome.com/2e7f7c152b.js" crossorigin="anonymous"></script>
       <script src="js/main.js"></script>
     </body>
   </html>

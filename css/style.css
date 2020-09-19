@@ -126,6 +126,41 @@ body.dark {
   width: 3px;
 }
 
+#menu-imp ul{
+  list-style: none;
+  margin-left: -40px;
+}
+
+#menu-imp li{
+  display: inline;
+}
+
+.menu-item-line {
+  font-weight: 100
+}
+
+.menu-item {
+  color: gray
+}
+
+a.list-resume:hover {
+  outline: none;
+  text-decoration: none;
+  color: #FDB515;
+}
+
+a.list-linkedin:hover {
+  outline: none;
+  text-decoration: none;
+  color: #2867b2;
+}
+
+a.list-github:hover {
+  outline: none;
+  text-decoration: none;
+  color: #28a745;
+}
+
 /* .list-group-item:after.dark {
   background: hsl(224, 14%, 15%);
 } */
@@ -742,6 +777,10 @@ ul {
 
 .smaller-mobile {
   font-size: 20px;
+}
+
+.smaller-mobile-links {
+  font-size: 18px;
 }
 
 .spinner-grow {
