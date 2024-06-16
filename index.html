@@ -20,8 +20,8 @@
       <!-- Bootstrap CSS -->
       <link
         rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
         crossorigin="anonymous"
       />
       <!-- Personal CSS -->
@@ -75,7 +75,7 @@
                 </a>
               </li>
           <li class="icon-bar-list-item mail social">
-            <a class="icon" href="mailto:eashaank@berkeley.edu" target="_blank">
+            <a class="icon" href="mailto:eashaank@gmail.com" target="_blank">
               <i
                 class="fa fa-envelope-square fa-lg icon-item"
                 aria-hidden="true"
@@ -119,9 +119,10 @@
               Hi! My name is Eashaan
             </h2>
             <p class="text text-justify ">
-              <h5 class="about-jobs about-school smaller-mobile animated fadeIn">I'm a senior studying <span class="major">Electrical Engineering and Computer Science</span> at
-              <span class="college">UC Berkeley</span>.</h5>
-              <h5 class="about-jobs smaller-mobile animated fadeIn delay-2s">Currently seeking <span class="lattice">Software Engineering</span> Oppurtunities for Summer 2021</h5>
+              <h5 class="about-jobs about-school smaller-mobile animated fadeIn">I'm a Software Engineer who previously worked at 
+                <span class="major">IMC Trading</span> developing <span class="college">high-performance, low-latency</span> systems.</h5>
+              <h5 class="about-jobs smaller-mobile animated fadeIn delay-2s">Currently seeking new <span class="lattice">Software 
+                Engineering</span> Oppurtunities</h5>
               <div id="menu-imp" class="smaller-mobile-links animated fadeIn delay-3s">
                 <ul>
                     <li class="menu-item"><a class="list-resume" href="https://drive.google.com/file/d/1cgg58kQLqthgpHUTKw-m9rnoQ1cVxrUK/view?usp=sharing" target="_blank">Resume</a></li>
@@ -131,8 +132,6 @@
                     <li class="menu-item"><a class="list-github" href="https://github.com/ekatiyar" target="_blank">Github</a></li>
                 </ul>
                 </div>
-              <!-- <h5 class="about-jobs smaller-mobile animated fadeIn delay-1s">Research Assistant @ <span class="mofrad">Mofrad Lab</span></h5>
-              <h5 class="about-jobs smaller-mobile animated fadeIn delay-2s">CS61B Mentor (Data Structures) @ <span class="csm">CSM</span></h5> -->
           </div>
           </div>
         </div>
@@ -155,6 +154,13 @@
                 >
                   <a
                     class="list-group-item list-group-item-action active list-bar"
+                    id="list-imc-list"
+                    data-toggle="list"
+                    href="#list-imc"
+                    role="tab"
+                    aria-controls="imc">IMC Trading</a>
+                  <a
+                    class="list-group-item list-group-item-action list-bar"
                     id="list-jnpr-list"
                     data-toggle="list"
                     href="#list-jnpr"
@@ -181,7 +187,7 @@
                     href="#list-ucb"
                     role="tab"
                     aria-controls="ucb">UC Berkeley</a>
-                  <a
+                  <!-- <a
                     class="list-group-item list-group-item-action list-bar"
                     id="list-stac-list"
                     data-toggle="list"
@@ -194,13 +200,45 @@
                     data-toggle="list"
                     href="#list-csm"
                     role="tab"
-                    aria-controls="csm">CSM</a>
+                    aria-controls="csm">CSM</a> -->
                 </div>
               </div>
               <div class="col-6">
                 <div class="tab-content" id="nav-tabContent">
                   <div
                     class="tab-pane show active"
+                    id="list-imc"
+                    role="tabpanel"
+                    aria-labelledby="list-imc-list"
+                  >
+                    <h4 class="job">
+                      Execution Software Engineer <span class="place">@ IMC Trading</span>
+                    </h4>
+                    <h6 class="date">August 2021 - October 2023</h6>
+                    <ul class="job-desc">
+                      <li class="job-desc-item">
+                        Spearheaded the development of new features for PyramidGen, a high-performance low-latency project 
+                        in <span class="techs">C++</span> enhancing IMC's competitive edge in valuation-triggered trading.
+                      </li>
+                      <li class="job-desc-item">
+                        Proactively automated tasks and optimized code generation in the PyramidGen codebase, 
+                        boosting developer efficiency and code maintainability.
+                      </li>
+                      <li class="job-desc-item">
+                        Overhauled the build process for the entire execution codebase, improving failure reporting, resolving 
+                        flaky tests, and introducing network-level synchronization of multi-threaded tests. This initiative led 
+                        to a 95% success rate in builds (up from sub-50%) and a reduction in build times, significantly accelerating 
+                        CD and release turnaround while minimizing developer friction.
+                      </li>
+                      <li class="job-desc-item">
+                        Served as team lead for the PyramidGen project, overseeing performance enhancement, bug fixing, and the onboarding
+                        of junior developers. Additionally, streamlined regression systems to enhance reproducibility and visibility.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div
+                    class="tab-pane"
                     id="list-jnpr"
                     role="tabpanel"
                     aria-labelledby="list-jnpr-list"
@@ -208,21 +246,23 @@
                     <h4 class="job">
                       Network Security Intern <span class="place">@ Juniper Networks</span>
                     </h4>
-                    <h6 class="date">May - Aug 2020</h6>
+                    <h6 class="date">May - August 2020</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Developed the back-end of the WAN Assurance project, which simplifies 
-                        corporate network operations and boosts network uptime
+                        Developed the back-end of the WAN Assurance project, streamlining corporate network operations and enhancing network uptime. 
+                        This service is actively utilized by Fortune 500 companies
+                        <a href="https://www.juniper.net/us/en/products-services/cloud-services/wan-assurance/" target="_blank">                
+                        <i class="fa fa-diagram-project p-head-foot p-foot " aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li class="job-desc-item">
-                        Integrated Juniper’s firewall devices by implementing <span class="techs">IPSEC</span> features for 
-                        the WAN-Assurance micro-services and data pipeline in a secure manner. Also 
-                        revamped micro-service codebase & associated protobuf structures to work with 
-                        high availability firewall systems
+                        Integrated Juniper's firewall devices by implementing <span class="techs">IPSEC</span> features for the WAN-Assurance 
+                        micro-services in Go and developed robust data pipeline using <span class="techs">Apache Kafka</span> & 
+                        <span class="techs">Storm</span>, ensuring secure network communication.
                       </li>
                       <li class="job-desc-item">
-                        Gained an industry understanding of <span class="techs">Go</span>, <span class="techs">Apache Kafka</span> & <span class="techs">Storm</span>, and experience 
-                        working in <span class="techs">Agile</span> development
+                        Overhauled the micro-service codebase and associated protobuf structures to ensure compatibility with high 
+                        availability firewall systems, enhancing the overall reliability and performance of the system.
                       </li>
                     </ul>
                   </div>
@@ -236,18 +276,17 @@
                     <h4 class="job">
                       Design Automation Intern <span class="place">@ Intel Corp.</span>
                     </h4>
-                    <h6 class="date">May - Aug 2019</h6>
+                    <h6 class="date">May - August 2019</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Built an application in <span class="techs">Perl</span> that vastly accelerated regression runtime and 
-                        testing turnaround relative to the old system for Intel’s 7 and 10nm
-                        server designs. Additionally, overhauled existing tools that communicated 
-                        chip design readiness to customers
+                        Developed a <span class="techs">Perl</span> application that significantly reduced regression runtime and 
+                        testing turnaround for Intel's 7 and 10nm server designs. Leveraged thread-level 
+                        <span class="techs">parallelism</span> and <span class="techs">distributed computing</span>
+                        to execute granularized test suites
                       </li>
                       <li class="job-desc-item">
-                        This application auto-generates Makefiles that only run regression tests 
-                        on updated designs & tests and leverages both thread-level <span class="techs">parallelism</span> 
-                        and <span class="techs">distributed computing</span> for a further performance increase
+                        Revamped tools for communicating chip design readiness to customers, enhancing the efficiency and accuracy 
+                        of communication processes.
                       </li>
                     </ul>
                   </div>
@@ -261,15 +300,15 @@
                     <h4 class="job">
                       Computer Vision Intern <span class="place">@ neurIOT</span>
                     </h4>
-                    <h6 class="date">Jun - Aug 2018</h6>
+                    <h6 class="date">Jun - August 2018</h6>
                     <ul class="job-desc">
                       <li class="job-desc-item">
-                        Developed a machine learning application that predicted sales of potential 
-                        sunglass designs for a leading sunglasses manufacturer
+                        Designed a machine learning application to forecast sales of prospective sunglass designs for a prominent 
+                        sunglasses manufacturer in India
                       </li>
                       <li class="job-desc-item">
-                        Designed system to extract sunglass fashion features from images by utilizing 
-                        <span class="techs">OpenCV</span> and <span class="techs">scikit-learn</span> for feature extraction and image classification
+                        Applied <span class="techs">OpenCV</span> and <span class="techs">scikit-learn</span> to analyze sunglass 
+                        fashion features from images, implementing advanced algorithms for feature extraction and image classification.
                       </li>
                     </ul>
                   </div>
@@ -334,11 +373,13 @@
                     <h4 class="job">
                       Course Projects <span class="place">@ UC Berkeley</span>
                     </h4>
-                    <h6 class="date">Aug 2017 - Present</h6>
-                    <ul class="job-desc">
+                    <h6 class="date">August 2017 - May 2021</h6>
+                    <ul class="job-desc"> 
                       <li class="job-desc-item">
-                        Built a End-to-End cryptographically secure file sharing service in <span class="techs">Go</span> 
-                        <a href="https://github.com/ekatiyar/CS161-P2" target="_blank">                
+                        Developed an Augmented Reality app and associated control and obstacle avoidance 
+                        <span class="techs">algorithms</span> to communicate with a bare-metal robot over BLE and enable it to 
+                        autonomously execute a user-defined path
+                        <a href="https://github.com/aparande/Robo-AR" target="_blank">                
                         <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
                         </a>
                       </li>
@@ -349,10 +390,6 @@
                         <a href="https://github.com/ekatiyar/guavabot" target="_blank">                
                         <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
                         </a>
-                      </li>
-                      <li class="job-desc-item">
-                        Implemented a pipelined 32-bit <span class="techs">RISC-V</span> processor from 
-                        the ground up using Logism
                       </li>
                       <li class="job-desc-item">
                         3-man team created voice-controlled model car using <span class="techs">PCA</span>, <span class="techs">SVD</span>, and <span class="techs">k-means</span>, along 
@@ -393,49 +430,50 @@
                     <div class="card-footer bg-transparent">Python &ensp;  SQL &ensp; SaaS &ensp; Stats
                     </div>
                   </div>
-                  <div class="card border-light ml-0 mb-3" >
-                      <div class="card-header bg-transparent ">
-                        <i class="fas fa-basketball-ball fa-2x p-head" aria-hidden="true"></i>
-                      </div>
-                      <div class="card-body ">
-                        <h4 class="card-title">Fantasy Basketball Lineup Optimizer</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Summer 2020</h6>
-                        <p class="card-text">Predicts and generates optimal daily fantasy lineups. Using it, I ranked in the top 5% of players in Yahoo DFS</p>
-                      </div>
-                      <div class="card-footer bg-transparent card-footer-reddit">JS &ensp;  LP &ensp;  Algo</div>
-                    </div>
+                <div class="card border-light ml-0 mb-3" >
+                  <div class="card-header bg-transparent">
+                    <i class="fas fa-brain fa-2x p-head" aria-hidden="true"> </i>      
+                    <a class="float-right" href="https://github.com/Terrychau541/CheapFake-Detector" target="_blank">                
+                    <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
+                  </a> 
+                  </div>
+                  <div class="card-body ">
+                    <h4 class="card-title">UCB Capstone Project: CheapFake Detector</h4>
+                    <p class="card-text">Partnered with FakeNetAI to develop, train, and test Dilated Res-Net models to 
+                      detect facial image manipulations using software like Photoshop.</p>
+                  </div>
+                  <div class="card-footer bg-transparent">Machine Learning &ensp;  PyTorch &ensp; Data Science &ensp;
+                  </div>
+                </div>
           </div>
 
           <div class="card-deck second-deck">
-              <div class="card border-light" >
-                  <div class="card-header bg-transparent ">
-                    <i class="fa fa-video-camera fa-2x p-head" aria-hidden="true"> </i>                       
-                    <a class="float-right" href="https://github.com/sahilrao21/LectureSummarization" target="_blank">
-                      <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
-                    </a>
-                  </div>
-                  <div class="card-body">
-                    <h4 class="card-title">TL;DW</h4>
-                    <h6 class="card-subtitle mb-2 text-muted">March 2019</h6>
-                    <p class="card-text">Command-Line application that summarizes webcast lectures by removing unimportant segments</p>
-                  </div>
-                  <div class="card-footer bg-transparent">Python &ensp;  NLP &ensp;  AI
-                  </div>
+            <div class="card border-light" >
+              <div class="card-header bg-transparent ">
+                <i class="fas fa-basketball-ball fa-2x p-head" aria-hidden="true"></i>
+              </div>
+              <div class="card-body ">
+                <h4 class="card-title">Fantasy Basketball Lineup Optimizer</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Summer 2020</h6>
+                <p class="card-text">Predicts and generates optimal daily fantasy lineups. Using it, I ranked in the top 5% of players in Yahoo DFS</p>
+              </div>
+              <div class="card-footer bg-transparent card-footer-reddit">JS &ensp;  LP &ensp;  Algo</div>
+            </div>
+            <div class="card border-light ml-0" >
+                <div class="card-header bg-transparent ">
+                  <i class="fa fa-video-camera fa-2x p-head" aria-hidden="true"> </i>                       
+                  <a class="float-right" href="https://github.com/sahilrao21/LectureSummarization" target="_blank">
+                    <i class="fa fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
+                  </a>
                 </div>
-                <div class="card border-light ml-0" >
-                    <div class="card-header bg-transparent ">
-                      <i class="fab fa-reddit-alien fa-2x p-head" aria-hidden="true"></i>
-                      <a class="float-right" href="https://github.com/ekatiyar/RedditRecommends" target="_blank">
-                      <i class="fab fa-github-alt p-head-foot p-foot " aria-hidden="true"></i>
-                    </a>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Reddit Recommends</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">November 2018</h6>
-                        <p class="card-text">Website that leverages Reddit purchasing sentiment to generate product recommendations in an easy-to-use web app</p>
-                    </div>
-                    <div class="card-footer bg-transparent">Python &ensp; NLP &ensp; Flask &ensp; Cloud</div>
-                  </div>
+                <div class="card-body">
+                  <h4 class="card-title">TL;DW</h4>
+                  <h6 class="card-subtitle mb-2 text-muted">March 2019</h6>
+                  <p class="card-text">Command-Line application that summarizes webcast lectures by removing unimportant segments</p>
+                </div>
+                <div class="card-footer bg-transparent">Python &ensp;  NLP &ensp;  AI
+                </div>
+              </div>
         </div>
 
         </div>
@@ -502,18 +540,18 @@
       <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font Awesome, then main JS files -->
 
       <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"
       ></script>
       <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"
       ></script>
       <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"
       ></script>
       <!-- <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script> -->
